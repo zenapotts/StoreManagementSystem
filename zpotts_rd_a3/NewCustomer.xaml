@@ -1,0 +1,31 @@
+﻿<Window x:Class="zpotts_rd_a3.NewCustomer"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:zpotts_rd_a3"
+        mc:Ignorable="d"
+        Title="NewCustomer" Height="450" Width="600">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+            <ColumnDefinition Width="2*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="1" Margin="3">
+            <TextBlock>Name</TextBlock>
+            <TextBox x:Name="NAME"></TextBox>
+            <TextBlock>Last Name</TextBlock>
+            <TextBox x:Name="LNAME"></TextBox>
+            <TextBlock>Phone</TextBlock>
+            <TextBox x:Name="PHONE"></TextBox>
+            <Button x:Name = "AddCust" Click="AddCust_Click" >Add New Customer</Button>
+        </StackPanel>
+        <DataGrid x:Name = "CustomersView" Grid.Column="1" Grid.Row="1"></DataGrid>
+        <Button x:Name="Complete" Grid.Column="1" Grid.Row="2" Margin="3" Click="Complete_Click">Finish Adding Customer(s)</Button>
+    </Grid>
+</Window>
