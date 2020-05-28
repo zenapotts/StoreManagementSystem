@@ -22,7 +22,7 @@ namespace zpotts_rd_a3
             server = "127.0.0.1";
             database = "ZPWally";
             uid = "root";
-            password = "Conestoga1";
+            password = "password";
             string connectionString;
             connectionString = "SERVER=" + server + ";" + "DATABASE=" +
             database + ";" + "UID=" + uid + ";" + "PASSWORD=" + password + ";";
